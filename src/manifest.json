@@ -1,0 +1,54 @@
+{
+  "name": "chrome-scroll-extension",
+  "version": "0.1.0",
+  "description": "Extension that will scroll down a page a configurable number of times",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "notifications",
+    "scripting",
+    "storage",
+    "tabs",
+    "tabGroups"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.bundle.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_icon": {
+      "128": "icon-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "content-main.bundle.js"
+      ]
+    }
+  ],
+  "commands": {
+    "chrome-scroll-extension-page-scroll-to-top": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+PageUp"
+      },
+      "description": "Scroll to the top"
+    },
+    "chrome-scroll-extension-page-scroll-to-bottom": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+PageDown"
+      },
+      "description": "Scroll down a page a configurable number of times"
+    }
+  },
+  "manifest_version": 3
+}

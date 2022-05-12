@@ -1,0 +1,10 @@
+/node_modules/
+build
+secrets.*.js
+npm-debug.log
+yarn-error.log
+
+### jetbrains
+.idea
+/http-client.private.env.json
+### jetbrains

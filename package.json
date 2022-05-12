@@ -1,0 +1,31 @@
+{
+    "name": "chrome-scroll-extension",
+    "version": "0.1.0",
+    "description": "Extension that will scroll down a page a configurable number of times",
+    "devDependencies": {
+        "@popperjs/core": "^2.11.2",
+        "@types/chrome": "^0.0.184",
+        "bootstrap": "^5.1.1",
+        "clean-webpack-plugin": "3.0.0",
+        "copy-webpack-plugin": "5.0.5",
+        "css-loader": "3.2.0",
+        "file-loader": "4.3.0",
+        "fs-extra": "8.1.0",
+        "html-loader": "0.5.5",
+        "html-webpack-plugin": "3.2.0",
+        "jquery": "^3.6.0",
+        "sass-loader": "^10.0.0",
+        "style-loader": "1.0.0",
+        "terser-webpack-plugin": "4.2.3",
+        "webpack": "4.41.2",
+        "webpack-cli": "3.3.10",
+        "webpack-dev-server": "3.9.0",
+        "write-file-webpack-plugin": "4.5.1"
+    },
+    "scripts": {
+        "build": "node utils/build.js",
+        "start": "node utils/webserver.js"
+    },
+    "license": "MIT",
+    "private": true
+}

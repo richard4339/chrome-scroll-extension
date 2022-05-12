@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chrome-scroll-extension Options</title>
+    <link href="bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <main>
+
+        <h4 class="mb-3">Options</h4>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="page-scrolltobottom-count" class="form-label">Scroll To Bottom Number of Scrolls</label>
+                    <input type="number" id="page-scrolltobottom-count" name="page-scrolltobottom-count" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="page-scrolltobottom-scrollback">
+                        <label class="form-check-label" for="page-scrolltobottom-scrollback">
+                            Scroll back to existing position?
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="page-scrolltobottom-default-count" class="form-label">Scroll To Bottom Default Number of Scrolls</label>
+                    <input type="number" id="page-scrolltobottom-default-count" name="page-scrolltobottom-default-count" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div id="status"></div>
+        <button id="save" class="btn btn-primary">Save</button>
+
+    </main>
+</div>
+
+</body>
+</html>
