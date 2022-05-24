@@ -1,6 +1,6 @@
 {
-  "name": "chrome-scroll-extension",
-  "version": "0.1.0",
+  "name": "Scroll",
+  "version": "0.2.0",
   "description": "Extension that will scroll down a page a configurable number of times",
   "icons": {
     "128": "icon-128.png"
